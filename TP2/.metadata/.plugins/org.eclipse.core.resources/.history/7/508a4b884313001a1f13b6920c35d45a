@@ -1,0 +1,10 @@
+package com.isetjb.ticit;
+
+public class Etudiant {
+	private int nce;
+	private String nom;
+	private String prenom;
+	private String niveau;
+	private String classe;
+
+}

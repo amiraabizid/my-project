@@ -1,0 +1,19 @@
+package com.isetjb.ticit;
+
+public class Revue extends Ouvrage implements IDelai {
+    private int numero;
+    private String periodicite;
+	public Revue(String titre, String editeur, Date datedition, double prix,int num,String perio) {
+		super(titre, editeur, datedition, prix);
+		this.numero=num;
+		this.periodicite=perio;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int nbreJours(Etudiant e) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

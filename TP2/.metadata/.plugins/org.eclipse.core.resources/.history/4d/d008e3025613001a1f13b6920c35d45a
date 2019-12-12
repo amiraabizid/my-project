@@ -1,0 +1,30 @@
+package com.isetjb.ticit;
+
+public class Livre extends Ouvrage implements IDelai {
+	private String Auteur;
+
+	public Livre(String titre, String editeur, Date datedition, double prix, String aut) {
+		super(titre, editeur, datedition, prix);
+		this.Auteur=aut;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int nbreJours(Etudiant e) {
+		int nbj;
+		switch(e.getNiveau())
+		{
+		case "1":
+			nbj=3;
+		case "2":
+			nbj=4;
+		case "3":
+		nbj=5;
+		default:nbj=0;
+		
+		}
+		return nbj;
+	}
+	
+
+}
